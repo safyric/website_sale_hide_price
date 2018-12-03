@@ -24,7 +24,7 @@
         </xpath>
     </template>
     
-    <template id="product_details" inherit_id="website_sale.product_details">
+    <template id="product_details" inherit_id="website_sale.product">
         <xpath expr="//a[@id='add_to_cart']" position="attributes">
             <attribute name="t-if">not is_public_user</attribute>
         </xpath>
