@@ -1,3 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
+    <template id="product_wishlist" inherit_id="website_sale_wishlist.product_wishlist">
+        <xpath expr="//table[@id='o_comparelist_table']/tr/td[3]" position="attributes">
+            <attribut name="t-if">
 </odoo>
