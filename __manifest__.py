@@ -23,7 +23,7 @@
         # 'security/ir.model.access.csv',
         'views/partner_view.xml',
         'views/website_sale_template.xml',
-        'views/website_sale_wishlist',
+        'views/website_sale_wishlist.xml',
     ],
     'installable': True,
 }
