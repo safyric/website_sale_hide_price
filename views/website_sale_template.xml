@@ -41,12 +41,12 @@
     <template id="product" inherit_id="website_sale.product">
         <xpath expr="//a[@id='add_to_cart']" position="attributes">
             <attribute name="t-if">
-                not is_public_user
+                not user_id.partner_id.name == 'Public user'
             </attribute>
         </xpath>
         <xpath expr="//div[hasclass('css_quantity')]" position="attributes">
             <attribute name="t-if">
-                not is_public_user
+                not user_id.partner_id.name == 'Public user'
             </attribute>
         </xpath>
     </template>
