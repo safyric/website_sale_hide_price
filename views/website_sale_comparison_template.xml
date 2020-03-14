@@ -10,7 +10,7 @@
         <xpath expr="//div[@class='product_summary']/span" position="attributes">
             <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
-        <xpath expr="//div[@class='product_summary']/form position="attribute">
+        <xpath expr="//div[@class='product_summary']/form" position="attribute">
             <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
