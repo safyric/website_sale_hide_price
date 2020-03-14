@@ -24,6 +24,7 @@
         'views/partner_view.xml',
         'views/website_sale_template.xml',
         'views/website_sale_wishlist.xml',
+        'views/website_sale_comparison_template.xml',
     ],
     'installable': True,
 }
