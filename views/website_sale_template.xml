@@ -13,7 +13,7 @@
     </template>
 
     <template id="product" inherit_id="website_sale.product">
-        <xpath expr="//div[@t-call='website_sale.product_price']" position="attributes">
+        <xpath expr="//t[@t-call='website_sale.product_price']" position="attributes">
             <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
         <xpath expr="//t[@t-call='website_sale.pricelist_list']" position="attributes">
