@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="products_item" inherit_id="website_sale.products_item">
-        <xpath expr="//div[@itemprop='offers']" position="attributes">
+        <xpath expr="//div[@itemprop='offers']/b" position="attributes">
             <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
@@ -20,22 +20,13 @@
             <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
         <xpath expr="//a[@id='add_to_cart']" position="attributes">
-            <attribute name="t-if">
-                not user_id.partner_id.name == 'Public user'
-            </attribute>
-        </xpath>
-        <xpath expr="//div[hasclass('css_quantity')]" position="attributes">
-            <attribute name="t-if">
-                not user_id.partner_id.name == 'Public user'
-            </attribute>
+            <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
 
     <template id="product_price" inherit_id="website_sale.product_price">
         <xpath expr="//div[@itemprop='offers']" position="attributes">
-            <attribute name="t-if">
-                website.website_show_price
-            </attribute>
+            <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
 
@@ -47,54 +38,40 @@
     
     <template id="cart_lines" inherit_id="website_sale.cart_lines">
         <xpath expr="//td[@name='price']" position="attributes">
-            <attribute name="t-if">
-                website.website_show_price
-            </attribute>
+            <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
         <xpath expr="//th[@class='text-center td-price']" position="attributes">
-            <attribute name="t-if">
-                website.website_show_price
-            </attribute>
+            <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
 
     <template id="cart_popover" inherit_id="website_sale.cart_popover">
         <xpath expr="//t[@t-call='website_sale.total']" position="attributes">
-            <attribute name="t-if">
-                website.website_show_price
-            </attribute>
+            <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
 
     <template id="extra_info" inherit_id="website_sale.extra_info">
         <xpath expr="//div[@class='col-12 col-xl-auto order-xl-2 d-none d-xl-block']" position="attributes">
-            <attribute name="t-if">
-                website.website_show_price
-            </attribute>
+            <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
 
     <template id="checkout" inherit_id="website_sale.checkout">
         <xpath expr="//div[@class='col-12 col-xl-auto order-xl-2 d-none d-xl-block']" position="attributes">
-            <attribute name="t-if">
-                website.website_show_price
-            </attribute>
+            <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
 
     <template id="address" inherit_id="website_sale.address">
         <xpath expr="//div[@class='col-12 col-xl-auto order-xl-2 d-none d-xl-block']" position="attributes">
-            <attribute name="t-if">
-                website.website_show_price
-            </attribute>
+            <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
     
     <template id="payment" inherit_id="website_sale.payment">
         <xpath expr="//div[@class='col-12 col-xl-auto order-xl-2']" position="attributes">
-            <attribute name="t-if">
-                website.website_show_price
-            </attribute>
+            <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
 </odoo>
