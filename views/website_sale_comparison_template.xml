@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+<template id="product_product" inherit_id="website_sale_comparison.product_product">
+    
+</template>
+</odoo>
