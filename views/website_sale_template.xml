@@ -85,11 +85,7 @@
     </template>
 
     <template id="variants" inherit_id="sale.variants">
-        <xpath expr="//option//span[@t-if='value_id.price_extra']" position="attributes">
-            <attribute name="invisible">1</attribute>
-        </xpath>
-        <xpath expr="//div//span[@t-if='value_id.price_extra']" position="attributes">
-            <attribute name="invisible">1</attribute>
-        </xpath>
+        <xpath expr="//option//span[@t-if='value_id.price_extra']" position="replace"/>
+        <xpath expr="//div//span[@t-if='value_id.price_extra']" position="replace"/>
     </template>
 </odoo>
