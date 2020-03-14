@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
     <template id="product_product" inherit_id="website_sale_comparison.product_product">
-        <xpath expr="//div/div[2]/span" position="attributes">
+        <xpath expr="//h6/span" position="attributes">
             <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
