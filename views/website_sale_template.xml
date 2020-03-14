@@ -40,7 +40,7 @@
     </template>
 
     <template id="cart" inherit_id="website_sale.cart">
-        <xpath expr="//div[class='col-12 col-xl-4']" psoition="attributes">
+        <xpath expr="//div[@class='col-12 col-xl-4']" psoition="attributes">
             <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
