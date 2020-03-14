@@ -25,7 +25,7 @@
     </template>
 
     <template id="products_add_to_cart" inherit_id="website_sale.products_add_to_cart">
-        <xpath expr="" position="attributes">
+        <xpath expr="//t[@t-if='product_variant_id']" position="attributes">
             <attribute name="t-if" add="and website.website_show_price" separator=" " />
         </xpath>
     </template>
