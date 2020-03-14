@@ -83,4 +83,13 @@
             <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
+
+    <template id="variants" inherit_id="sale.variants">
+        <xpath expr="//option//span[@t-if='value_id.price_extra']" position="attributes">
+            <attribute name="t-if" add="and website.website_show_price" sperator=" " />
+        </xpath>
+        <xpath expr="//div//span[@t-if='value_id.price_extra']" position="attributes">
+            <attribute name="t-if" add="and website.website_show_price" sperator=" " />
+        </xpath>
+    </template>
 </odoo>
