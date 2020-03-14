@@ -40,7 +40,7 @@
     </template>
 
     <template id="cart" inherit_id="website_sale.cart">
-        <xpath expr="//div[@class='col-12 col-xl-4']" psoition="attributes">
+        <xpath expr="//div[@class='col-12 col-xl-4']" position="attributes">
             <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
     </template>
@@ -60,6 +60,38 @@
 
     <template id="cart_popover" inherit_id="website_sale.cart_popover">
         <xpath expr="//t[@t-call='website_sale.total']" position="attributes">
+            <attribute name="t-if">
+                website.website_show_price
+            </attribute>
+        </xpath>
+    </template>
+
+    <template id="extra_info" inherit_id="website_sale.extra_info">
+        <xpath expr="//div[@class='col-12 col-xl-auto order-xl-2 d-none d-xl-block']" position="attributes">
+            <attribute name="t-if">
+                website.website_show_price
+            </attribute>
+        </xpath>
+    </template>
+
+    <template id="checkout" inherit_id="website_sale.checkout">
+        <xpath expr="//div[@class='col-12 col-xl-auto order-xl-2 d-none d-xl-block']" position="attributes">
+            <attribute name="t-if">
+                website.website_show_price
+            </attribute>
+        </xpath>
+    </template>
+
+    <template id="address" inherit_id="website_sale.address">
+        <xpath expr="//div[@class='col-12 col-xl-auto order-xl-2 d-none d-xl-block']" position="attributes">
+            <attribute name="t-if">
+                website.website_show_price
+            </attribute>
+        </xpath>
+    </template>
+    
+    <template id="payment" inherit_id="website_sale.payment">
+        <xpath expr="//div[@class='col-12 col-xl-auto order-xl-2']" position="attributes">
             <attribute name="t-if">
                 website.website_show_price
             </attribute>
