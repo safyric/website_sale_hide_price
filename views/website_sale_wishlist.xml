@@ -4,5 +4,8 @@
         <xpath expr="//table[@id='o_comparelist_table']//tr//td[3]" position="attributes">
             <attribute name="t-if">website.website_show_price</attribute>
         </xpath>
+        <xpath expr="//table[@id='o_comparelist_table']//tr//td[4]" position="attributes">
+            <attribute name="t-if">website.website_show_price</attribute>
+        </xpath>
     </template>
 </odoo>
